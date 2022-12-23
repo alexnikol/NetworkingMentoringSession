@@ -1,16 +1,12 @@
-# **Calorimetry Calculator**
+# **Networking showcase with open API for beginners**
 
-## Calculation formulas
+## Tutorial plan
 
-Males = 10 * Weight(kg) + 6.25 * Height(cm) - 5 * age(y) + 5 + Exercises Value
+- URLSession request
+- Mapping data with Decodable
+- Display data on screen
 
-Females = 8 * Weight(kg) + 5.25 * Height(cm) - 5 * age(y) + 5 - 161 + Exercises Value
+### Used API
+https://www.listennotes.com/api/docs/#get-api-v2-genres
 
-
-## **Exercises types**
-**Type** | **Calories**
-------------- | -------------
-**`None`**  | 0
-**`Low`**  | 50
-**`Medium`**  | 150
-**`High`**  | 250
+https://www.listennotes.com/api/docs/#get-api-v2-best_podcasts
