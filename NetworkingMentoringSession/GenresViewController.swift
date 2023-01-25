@@ -2,23 +2,7 @@
 
 import UIKit
 
-struct GenresResult: Decodable {
-    let genres: [Genre]
-}
-
-struct Genre: Decodable {
-    let id: Int
-    let name: String
-    let parentID: Int
-    
-    private enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case parentID = "parent_id"
-    }
-}
-
-class ViewController: UITableViewController {
+class GenresViewController: UITableViewController {
     
     var models: [Genre] = []
     
@@ -26,7 +10,6 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(getGenres), for: .valueChanged)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         getGenres()
     }
     
